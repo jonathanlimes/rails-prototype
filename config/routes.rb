@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'faq/index'
+
   get 'welcome/index'
 
   post 'welcome/index'
