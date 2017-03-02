@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  
+  get 'faq/index'
   get 'about/index'
-
   get 'welcome/index'
   post 'welcome/index'
   root 'welcome#index' # this will be your starter page. ALWAYS set a root.
