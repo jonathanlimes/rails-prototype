@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'comments/index'
+
   get 'faq/index'
   get 'about/index'
   get 'welcome/index'
@@ -7,7 +9,7 @@ Rails.application.routes.draw do
   root 'welcome#index' # this will be your starter page. ALWAYS set a root.
   get 'contact/index'
 
-  resources :articles
+  resources :articles, :comments
 
   # THE ABOVE 'GET' IS BASICALLY THE RUBY VERSION OF:
   # app.get(function(req, res) {
