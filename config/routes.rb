@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'contact/index'
 
   resources :articles
+
   # THE ABOVE 'GET' IS BASICALLY THE RUBY VERSION OF:
   # app.get(function(req, res) {
   #   res.render('welcome/index')
