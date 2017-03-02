@@ -1,3 +1,9 @@
 <h1>All Articles</h1>
 
+<!--  List all articles in my database -->
+
 <p>List all articles below</p>
+
+<% @articles.each do |article| %>
+  <pre><%= article.inspect %></pre>
+<% end %>
